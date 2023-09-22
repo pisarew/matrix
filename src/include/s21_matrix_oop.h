@@ -44,8 +44,8 @@ class S21Matrix {
   void SetCols(int cols);
 
  private:
-  double** matrix_ = nullptr;
   int rows_, cols_;
+  double** matrix_ = nullptr;
   void CreateMatrix();
   void DeleteMatrix();
   double MulRowOnCol(const S21Matrix& other, int row, int col) noexcept;
